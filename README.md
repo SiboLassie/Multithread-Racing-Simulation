@@ -23,11 +23,11 @@ Design Patterns:
 
    Thread pool- using ExecutorService to create a Thread pool, each racer is inherit Runnable interface and can be run separately in the Thread pool using a queue.
 
-   State- there are 4 states classes: active, broken, completed, disabled. used for the Mishups system.
+   State- there are 4 states classes: active, broken, completed, disabled. used for the Mishaps system.
 
-   Factory- use an "Arena Factory" to build an arena for the race, There are different types of arenas, uses Reflection to load each arena constructor and get the right type.
+   Factory- use an "Arena Factory" to build an arena for the race, There are different types of arenas, using Reflection to load each arena constructor and get the right type.
 
-   Builder- using Builder to build a simple Cars Race and also to build an arena and racers for the race , uses Reflection to load each arena/racer constructor and get the right type.
+   Builder- using Builder to build a simple Cars Race and also to build an arena and racers for the race , using Reflection to load each arena/racer constructor and get the right type.
 
    Decorator- using Decorator to decorate an existing racer instance and change his parameters like color etc..
 
