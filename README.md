@@ -12,24 +12,27 @@ a basic Racing Game that using a separate thread for each racer, using ExecutorS
 this project also focusing on the implementation of Java Design Patterns.
 
 Interactive GUI- the user can create a race uses the right parameters.
+
 There are 3 types of maps: Air, Land, Naval, and 7 types of racers: plane, helicopter, car, bycicle, horse, speedboat, rowboat.
+
 Mishap system- During the race there is a probability that one of the racers will go through an event (mishap), the state of the racer will change accordingly.
+
 Exceptions system- all exceptions for the right parameters for each input and the logic of the race are handled and display the user an appropriate message.
 
 Design Patterns:
-  Thread pool- using ExecutorService to create a Thread pool, each racer is inherit Runnable interface and can be run separately in the Thread pool using a queue.
+    Thread pool- using ExecutorService to create a Thread pool, each racer is inherit Runnable interface and can be run separately in the Thread pool using a queue.
 
-  State- there are 4 states classes: active, broken, completed, disabled. used for the Mishups system.
+    State- there are 4 states classes: active, broken, completed, disabled. used for the Mishups system.
 
-  Factory- use an "Arena Factory" to build an arena for the race, There are different types of arenas, uses Reflection to load each arena constructor and get the right type.
+    Factory- use an "Arena Factory" to build an arena for the race, There are different types of arenas, uses Reflection to load each arena constructor and get the right type.
 
-  Builder- using Builder to build a simple Cars Race and also to build an arena and racers for the race , uses Reflection to load each arena/racer constructor and get the right type.
+    Builder- using Builder to build a simple Cars Race and also to build an arena and racers for the race , uses Reflection to load each arena/racer constructor and get the right type.
 
-  Decorator- using Decorator to decorate an existing racer instance and change his parameters like color etc..
+    Decorator- using Decorator to decorate an existing racer instance and change his parameters like color etc..
 
-  Prototype- Prototype receives any racer, or racer subclass that inherit from Cloneable, makes a copy of it and stores it, Prototype has no idea what these objects are, except that they are subclasses of racer.
+    Prototype- Prototype receives any racer, or racer subclass that inherit from Cloneable, makes a copy of it and stores it, Prototype has no idea what these objects are, except that they are subclasses of racer.
 
-  Observer- The Observer "notifyMsg" method is called when the subject changes, GUI is the Observer that get a message from an Observable and act matching, each racer is an observable that notify the Observer with a message of current state.
+    Observer- The Observer "notifyMsg" method is called when the subject changes, GUI is the Observer that get a message from an Observable and act matching, each racer is an observable that notify the Observer with a message of current state.
 
-  Singleton- use a "RaceBuilder" Singleton to build the right arena and the matching racers objects.
+    Singleton- use a "RaceBuilder" Singleton to build the right arena and the matching racers objects.
 
