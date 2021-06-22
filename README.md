@@ -19,7 +19,7 @@ Mishap system- During the race there is a probability that one of the racers wil
 
 Exceptions system- all exceptions for the right parameters for each input and the logic of the race are handled and display the user an appropriate message.
 
-<img src = "readme_imgs.jpg">
+<img src = "readme_img.jpg">
 
 Design Patterns:
 
