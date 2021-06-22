@@ -19,6 +19,8 @@ Mishap system- During the race there is a probability that one of the racers wil
 
 Exceptions system- all exceptions for the right parameters for each input and the logic of the race are handled and display the user an appropriate message.
 
+<img src = "readme_imgs.jpg">
+
 Design Patterns:
 
    Thread pool- using ExecutorService to create a Thread pool, each racer is inherit Runnable interface and can be run separately in the Thread pool using a queue.
